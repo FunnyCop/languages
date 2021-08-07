@@ -24,19 +24,24 @@ public class LanguageApi {
 	// Retrieve
 	
 	@RequestMapping( value = "/all", method = RequestMethod.GET )
-	public List< Language > findById() { return languageService.findAll(); }
+	public List< Language > findById()
+		{ return languageService.findAll(); }
 	
 	@RequestMapping( value = "/id/{id}", method = RequestMethod.GET )
-	public Language findById( @PathVariable( "id" ) Long id ) { return languageService.findById( id ); }
+	public Language findById( @PathVariable( "id" ) Long id )
+		{ return languageService.findById( id ); }
 	
 	@RequestMapping( value = "/name/{name}", method = RequestMethod.GET )
-	public List< Language > findByName( @PathVariable( "name" ) String name ) { return languageService.findByName( name ); }
+	public List< Language > findByName( @PathVariable( "name" ) String name )
+		{ return languageService.findByName( name ); }
 	
 	@RequestMapping( value = "/creator/{creator}", method = RequestMethod.GET )
-	public List< Language > findByCreatorF( @PathVariable( "creator" ) String creator ) { return languageService.findByCreator( creator ); }
+	public List< Language > findByCreatorF( @PathVariable( "creator" ) String creator )
+		{ return languageService.findByCreator( creator ); }
 	
 	@RequestMapping( value = "/version/{version}", method = RequestMethod.GET )
-	public List< Language > findByVersion( @PathVariable( "version" ) String version ) { return languageService.findByVersion( version ); }
+	public List< Language > findByVersion( @PathVariable( "version" ) String version )
+		{ return languageService.findByVersion( version ); }
 	
 	// Create
 
@@ -89,6 +94,7 @@ public class LanguageApi {
 	// Delete
 	
 	@RequestMapping( value = "/delete/{id}", method = RequestMethod.DELETE )
-	public void deleteLanguage( @PathVariable( "id" ) Long id ) { languageService.deleteLanguage( id ); }
+	public void deleteLanguage( @PathVariable( "id" ) Long id )
+		{ languageService.deleteLanguage( id ); }
 
 }

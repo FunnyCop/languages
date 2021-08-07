@@ -17,29 +17,36 @@ public class LanguageService {
 	
 	private final LanguageRepository languageRepository;
 	
-	public LanguageService( LanguageRepository languageRepository ) { this.languageRepository = languageRepository; }
+	public LanguageService( LanguageRepository languageRepository )
+		{ this.languageRepository = languageRepository; }
 	
 	// Retrieve
 	
-	public List< Language > findAll() { return languageRepository.findAll(); }
+	public List< Language > findAll()
+		{ return languageRepository.findAll(); }
 
 	public Language findById( Long id ) {
 		Optional< Language > optionalLanguage = languageRepository.findById( id );
 		
-		if ( optionalLanguage.isPresent() ) return optionalLanguage.get();
+		if ( optionalLanguage.isPresent() )
+			return optionalLanguage.get();
 		
 		return null;
 	}
 
-	public List< Language > findByName( String name ) { return languageRepository.findByName( name ); }
+	public List< Language > findByName( String name )
+		{ return languageRepository.findByName( name ); }
 
-	public List< Language > findByCreator( String creator ) { return languageRepository.findByCreator( creator ); }
+	public List< Language > findByCreator( String creator )
+		{ return languageRepository.findByCreator( creator ); }
 
-	public List< Language > findByVersion( String version ) { return languageRepository.findByVersion( version ); }
+	public List< Language > findByVersion( String version )
+		{ return languageRepository.findByVersion( version ); }
 	
 	// Create
 
-	public Language createLanguage( Language newLanguage ) { return languageRepository.save( newLanguage ); }
+	public Language createLanguage( Language newLanguage )
+		{ return languageRepository.save( newLanguage ); }
 	
 	// Update
 	
@@ -112,6 +119,7 @@ public class LanguageService {
 	
 	// Delete
 
-	public void deleteLanguage( Long id ) { languageRepository.deleteById( id ); }
+	public void deleteLanguage( Long id )
+		{ languageRepository.deleteById( id ); }
 
 }

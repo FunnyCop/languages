@@ -31,23 +31,31 @@ public class Language {
 	
 	// Getters
 	
-	public Long getId() { return this.id; } // language.id -> Long
+	public Long getId()
+		{ return this.id; } // language.id -> Long
 	
-	public String getName() { return this.name; } // language.name -> String
+	public String getName()
+		{ return this.name; } // language.name -> String
 	
-	public String getCreator() { return this.creator; } // language.creator -> String
+	public String getCreator()
+		{ return this.creator; } // language.creator -> String
 	
-	public String getVersion() { return this.version; } // language.version -> String
+	public String getVersion()
+		{ return this.version; } // language.version -> String
 	
 	// Setters
 	
-	public void setId( Long newId ) { this.id = newId; } // language.id -> Long
+	public void setId( Long newId )
+		{ this.id = newId; } // language.id -> Long
 	
-	public void setName( String newName ) { this.name = newName; } // language.name -> String
+	public void setName( String newName )
+		{ this.name = newName; } // language.name -> String
 	
-	public void setCreator( String newCreator ) { this.creator = newCreator; } // language.creator -> String
+	public void setCreator( String newCreator )
+		{ this.creator = newCreator; } // language.creator -> String
 	
-	public void setVersion( String newVersion ) { this.version = newVersion; } // language.version -> String
+	public void setVersion( String newVersion )
+		{ this.version = newVersion; } // language.version -> String
 	
 	// Constructors
 	

@@ -24,11 +24,13 @@ public class LanguageController {
 	
 	private final LanguageService languageService;
 	
-	public LanguageController( LanguageService languageService ) { this.languageService = languageService; }
+	public LanguageController( LanguageService languageService )
+		{ this.languageService = languageService; }
 	
 	// Retrieve
 	@RequestMapping( "/" )
-	public String index() { return "redirect:/languages"; }
+	public String index()
+		{ return "redirect:/languages"; }
 	
 	@RequestMapping( "/languages" )
 	public String languages(
