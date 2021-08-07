@@ -1,0 +1,33 @@
+#language-table {
+	width: 80%;
+	height: fit-content;
+	
+	border: 1px solid black;
+}
+
+#language-table tbody tr td div {
+	display: flex;
+	
+	gap: 10px;
+}
+
+#create-language {
+	width: 50%;
+	
+	display: flex;
+	flex-direction: column;
+	
+	gap: 10px;
+}
+
+#create-language label, #create-language input {
+	width: 100%;
+}
+
+#coner-home-link {
+	width: 100%;
+	
+	padding-right: 20px;
+	
+	text-align: right;
+}
