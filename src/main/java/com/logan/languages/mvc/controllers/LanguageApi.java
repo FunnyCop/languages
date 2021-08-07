@@ -19,7 +19,8 @@ public class LanguageApi {
 	
 	public final LanguageService languageService;
 	
-	public LanguageApi( LanguageService languageService ) { this.languageService = languageService; }
+	public LanguageApi( LanguageService languageService )
+		{ this.languageService = languageService; }
 	
 	// Retrieve
 	
