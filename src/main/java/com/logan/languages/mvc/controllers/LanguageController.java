@@ -36,7 +36,8 @@ public class LanguageController {
 	public String languages(
 		Model model
 	) {
-		if ( !model.containsAttribute( "language" ) ) { model.addAttribute( "language", new Language() ); }
+		if ( !model.containsAttribute( "language" ) )
+			{ model.addAttribute( "language", new Language() ); }
 		
 		List< Language > languages = languageService.findAll();
 		model.addAttribute( "languages", languages );
@@ -106,7 +107,8 @@ public class LanguageController {
 	public String viewOne( @PathVariable( "id" ) Long id, Model model ) {
 		Language language = languageService.findById( id );
 
-		if ( language == null ) { return "redirect:/languages"; }
+		if ( language == null )
+			{ return "redirect:/languages"; }
 
 		model.addAttribute( "id", language.getId() );
 		model.addAttribute( "name", language.getName() );
